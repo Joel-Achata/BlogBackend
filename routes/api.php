@@ -32,6 +32,9 @@ Route::post('/resultados',[PostController::class,'filtrado']);
 
 Route::post('/contactos',[PostController::class,'contacto']);
 
+//Ruta para enviar el sms test
+Route::get('/sms/{telefono}',[PostController::class,'enviarSMS']);
+
 
 Route::group(["middleware" => "auth:sanctum"], function () {
     Route::post('/comentarios',[PostController::class,'comentario']);

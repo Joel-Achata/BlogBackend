@@ -13,7 +13,8 @@ class Contactos extends Model
     protected $fillable=[
         'nombre',
         'correo',
-        'asunro',
+        'asunto',
         'mensaje',
+        'telefono',
     ];
 }
